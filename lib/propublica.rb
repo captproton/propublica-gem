@@ -49,6 +49,7 @@ class ProPublica
 
         senate_members.each do |hash|
           member = {}
+          member[:id] = hash["id"]
           member[:first_name] = hash["first_name"]
           member[:last_name] = hash["last_name"]
           member[:link] = hash["api_uri"]
@@ -74,6 +75,7 @@ class ProPublica
 
       house_members.each do |hash|
           member = {}
+          member[:id] = hash["id"]
           member[:first_name] = hash["first_name"]
           member[:last_name] = hash["last_name"]
           member[:link] = hash["api_uri"]
